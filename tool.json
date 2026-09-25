@@ -1,0 +1,237 @@
+{
+  "tool": {
+    "id": "escore-de-beighton",
+    "title": "Escore de Beighton",
+    "short": "Hipermobilidade articular generalizada",
+    "desc": "Escore de Beighton para hipermobilidade articular generalizada, com os pontos de corte por idade dos critérios internacionais de 2017.",
+    "lead": "Mede a hipermobilidade articular em 9 manobras simples e aplica o ponto de corte da faixa etária usado nos critérios de 2017 da síndrome de Ehlers-Danlos hipermóvel.",
+    "spec": [
+      "ortopedia-e-traumatologia",
+      "reumatologia",
+      "medicina-esportiva",
+      "genetica-medica",
+      "medicina-fisica-e-reabilitacao"
+    ],
+    "fields": [
+      [
+        "faixa",
+        "Faixa etária",
+        "radio",
+        {
+          "opts": {
+            "pre": "Pré-púbere",
+            "adulto": "Púbere até 50 anos",
+            "idoso": "Acima de 50 anos"
+          }
+        }
+      ],
+      [
+        "dedo_d",
+        "Extensão passiva do 5º dedo <strong>direito</strong> além de 90°",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "dedo_e",
+        "Extensão passiva do 5º dedo <strong>esquerdo</strong> além de 90°",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "polegar_d",
+        "Polegar <strong>direito</strong> toca o antebraço (flexão passiva)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "polegar_e",
+        "Polegar <strong>esquerdo</strong> toca o antebraço (flexão passiva)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "cotovelo_d",
+        "Hiperextensão do cotovelo <strong>direito</strong> além de 10°",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "cotovelo_e",
+        "Hiperextensão do cotovelo <strong>esquerdo</strong> além de 10°",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "joelho_d",
+        "Hiperextensão do joelho <strong>direito</strong> além de 10°",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "joelho_e",
+        "Hiperextensão do joelho <strong>esquerdo</strong> além de 10°",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "tronco",
+        "Apoia as palmas das mãos no chão com os joelhos estendidos",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "formula": "<p>Um ponto por manobra positiva, de cada lado quando bilateral: 5º dedo (2), polegar (2), cotovelo (2), joelho (2) e flexão do tronco (1). Total de 0 a 9.</p><p><strong>Hipermobilidade generalizada</strong> (critérios de 2017): ≥ 6 em crianças e adolescentes pré-púberes; ≥ 5 de púberes até 50 anos; ≥ 4 acima de 50 anos.</p>",
+    "table": [
+      [
+        "Faixa etária",
+        "Ponto de corte"
+      ],
+      [
+        "Pré-púbere",
+        "≥ 6 de 9"
+      ],
+      [
+        "Púbere até 50 anos",
+        "≥ 5 de 9"
+      ],
+      [
+        "Acima de 50 anos",
+        "≥ 4 de 9"
+      ]
+    ],
+    "tips": [
+      "Meça com goniômetro sempre que possível: a estimativa visual de 10° de hiperextensão é pouco reprodutível.",
+      "Nos critérios de 2017, quem fica 1 ponto abaixo do corte pode ser considerado positivo se responder sim a 2 ou mais perguntas do questionário de 5 itens (hipermobilidade atual ou prévia).",
+      "O escore não avalia ombros, quadris, tornozelos nem pés: hipermobilidade localizada pode passar despercebida.",
+      "Hipermobilidade isolada é comum e costuma ser assintomática; o diagnóstico de Ehlers-Danlos hipermóvel exige os demais critérios de 2017.",
+      "Em atletas (ginástica, dança, natação), hipermobilidade é frequente e pode estar associada a instabilidade articular e lesões por sobrecarga."
+    ],
+    "sources": [
+      [
+        "Beighton P, Solomon L, Soskolne CL. Articular mobility in an African population. Ann Rheum Dis, 1973.",
+        "https://doi.org/10.1136/ard.32.5.413"
+      ],
+      [
+        "Malfait F et al. The 2017 international classification of the Ehlers-Danlos syndromes. Am J Med Genet C Semin Med Genet, 2017.",
+        "https://doi.org/10.1002/ajmg.c.31552"
+      ]
+    ],
+    "cases": [
+      [
+        "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+        {
+          "faixa": "adulto",
+          "dedo_d": true,
+          "dedo_e": true,
+          "polegar_d": true,
+          "polegar_e": true,
+          "tronco": true
+        },
+        {
+          "raw": {
+            "score": 5,
+            "positivo": 1
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+        {
+          "faixa": "pre",
+          "dedo_d": true,
+          "dedo_e": true,
+          "polegar_d": true,
+          "polegar_e": true,
+          "tronco": true
+        },
+        {
+          "raw": {
+            "score": 5,
+            "positivo": 0
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+        {
+          "faixa": "idoso",
+          "cotovelo_d": true,
+          "cotovelo_e": true,
+          "joelho_d": true,
+          "joelho_e": true
+        },
+        {
+          "raw": {
+            "score": 4,
+            "positivo": 1
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Adulto sem manobras positivas: 0",
+        {
+          "faixa": "adulto"
+        },
+        {
+          "raw": {
+            "score": 0
+          },
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}

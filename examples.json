@@ -1,0 +1,97 @@
+[
+  {
+    "label": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true
+    },
+    "expected": {
+      "raw": {
+        "score": 5,
+        "positivo": 1
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "faixa": "adulto",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+    "input": {
+      "faixa": "pre",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true
+    },
+    "expected": {
+      "raw": {
+        "score": 5,
+        "positivo": 0
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "faixa": "pre",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+    "input": {
+      "faixa": "idoso",
+      "cotovelo_d": true,
+      "cotovelo_e": true,
+      "joelho_d": true,
+      "joelho_e": true
+    },
+    "expected": {
+      "raw": {
+        "score": 4,
+        "positivo": 1
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "faixa": "idoso",
+      "cotovelo_d": true,
+      "cotovelo_e": true,
+      "joelho_d": true,
+      "joelho_e": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Adulto sem manobras positivas: 0",
+    "input": {
+      "faixa": "adulto"
+    },
+    "expected": {
+      "raw": {
+        "score": 0
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "faixa": "adulto"
+    },
+    "expandedZeroOptions": []
+  }
+]
