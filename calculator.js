@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-escore-de-beighton · Elucenia · https://github.com/Elucenia/tool-escore-de-beighton
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escore-de-beighton","title":"Escore de Beighton","fields":[["faixa","Faixa etária","radio",{"opts":{"pre":"Pré-púbere","adulto":"Púbere até 50 anos","idoso":"Acima de 50 anos"}}],["dedo_d","Extensão passiva do 5º dedo <strong>direito</strong> além de 90°","chk",{"pts":1}],["dedo_e","Extensão passiva do 5º dedo <strong>esquerdo</strong> além de 90°","chk",{"pts":1}],["polegar_d","Polegar <strong>direito</strong> toca o antebraço (flexão passiva)","chk",{"pts":1}],["polegar_e","Polegar <strong>esquerdo</strong> toca o antebraço (flexão passiva)","chk",{"pts":1}],["cotovelo_d","Hiperextensão do cotovelo <strong>direito</strong> além de 10°","chk",{"pts":1}],["cotovelo_e","Hiperextensão do cotovelo <strong>esquerdo</strong> além de 10°","chk",{"pts":1}],["joelho_d","Hiperextensão do joelho <strong>direito</strong> além de 10°","chk",{"pts":1}],["joelho_e","Hiperextensão do joelho <strong>esquerdo</strong> além de 10°","chk",{"pts":1}],["tronco","Apoia as palmas das mãos no chão com os joelhos estendidos","chk",{"pts":1}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
