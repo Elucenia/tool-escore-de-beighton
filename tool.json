@@ -5,6 +5,7 @@
     "short": "Hipermobilidade articular generalizada",
     "desc": "Escore de Beighton para hipermobilidade articular generalizada, com os pontos de corte por idade dos critérios internacionais de 2017.",
     "lead": "Mede a hipermobilidade articular em 9 manobras simples e aplica o ponto de corte da faixa etária usado nos critérios de 2017 da síndrome de Ehlers-Danlos hipermóvel.",
+    "kind": "Calculadora",
     "spec": [
       "ortopedia-e-traumatologia",
       "reumatologia",
@@ -29,101 +30,58 @@
         "dedo_d",
         "Extensão passiva do 5º dedo <strong>direito</strong> além de 90°",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "dedo_e",
         "Extensão passiva do 5º dedo <strong>esquerdo</strong> além de 90°",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "polegar_d",
         "Polegar <strong>direito</strong> toca o antebraço (flexão passiva)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "polegar_e",
         "Polegar <strong>esquerdo</strong> toca o antebraço (flexão passiva)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "cotovelo_d",
         "Hiperextensão do cotovelo <strong>direito</strong> além de 10°",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "cotovelo_e",
         "Hiperextensão do cotovelo <strong>esquerdo</strong> além de 10°",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "joelho_d",
         "Hiperextensão do joelho <strong>direito</strong> além de 10°",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "joelho_e",
         "Hiperextensão do joelho <strong>esquerdo</strong> além de 10°",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "tronco",
         "Apoia as palmas das mãos no chão com os joelhos estendidos",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
     "formula": "<p>Um ponto por manobra positiva, de cada lado quando bilateral: 5º dedo (2), polegar (2), cotovelo (2), joelho (2) e flexão do tronco (1). Total de 0 a 9.</p><p><strong>Hipermobilidade generalizada</strong> (critérios de 2017): ≥ 6 em crianças e adolescentes pré-púberes; ≥ 5 de púberes até 50 anos; ≥ 4 acima de 50 anos.</p>",
-    "table": [
-      [
-        "Faixa etária",
-        "Ponto de corte"
-      ],
-      [
-        "Pré-púbere",
-        "≥ 6 de 9"
-      ],
-      [
-        "Púbere até 50 anos",
-        "≥ 5 de 9"
-      ],
-      [
-        "Acima de 50 anos",
-        "≥ 4 de 9"
-      ]
-    ],
-    "tips": [
-      "Meça com goniômetro sempre que possível: a estimativa visual de 10° de hiperextensão é pouco reprodutível.",
-      "Nos critérios de 2017, quem fica 1 ponto abaixo do corte pode ser considerado positivo se responder sim a 2 ou mais perguntas do questionário de 5 itens (hipermobilidade atual ou prévia).",
-      "O escore não avalia ombros, quadris, tornozelos nem pés: hipermobilidade localizada pode passar despercebida.",
-      "Hipermobilidade isolada é comum e costuma ser assintomática; o diagnóstico de Ehlers-Danlos hipermóvel exige os demais critérios de 2017.",
-      "Em atletas (ginástica, dança, natação), hipermobilidade é frequente e pode estar associada a instabilidade articular e lesões por sobrecarga."
-    ],
     "sources": [
       [
         "Beighton P, Solomon L, Soskolne CL. Articular mobility in an African population. Ann Rheum Dis, 1973.",
@@ -132,6 +90,10 @@
       [
         "Malfait F et al. The 2017 international classification of the Ehlers-Danlos syndromes. Am J Med Genet C Semin Med Genet, 2017.",
         "https://doi.org/10.1002/ajmg.c.31552"
+      ],
+      [
+        "Malfait2017",
+        "https://www.ehlers-danlos.com/wp-content/uploads/2022/12/Malfait_et_al-2017-American_Journal_of_Medical_Genetics_Part_C__Seminars_in_Medical_Genetics.pdf"
       ]
     ],
     "cases": [
@@ -201,9 +163,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -212,17 +171,551 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:08:23.391Z",
+      "total": 1536,
+      "passed": 1536,
+      "sourceRowCount": 1536,
+      "uniqueApiInputCount": 1536,
+      "sourceContextCount": 1536,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "71f8968a562283b37c82687fa08580f9f2bc18edc507c0070608d85a3e675bc2",
+        "total": 1536,
+        "bankRowCount": 1536,
+        "uniqueApiInputCount": 1536,
+        "sourceContextCount": 1536,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+            "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/three-score-source-comparison-final27.json",
+          "sha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517"
+        },
+        "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 1536,
+        "uniqueApiInputs": 1536,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+          "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+        }
+      },
+      "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+      "sources": [
+        {
+          "id": "escore-de-beighton",
+          "declaredEdition": "Beighton 1973:9 pontos; limiares etárioscritérios EDS 2017; sem novo diagnóstico automático",
+          "readRecords": [
+            {
+              "id": "escore-de-beighton",
+              "edition": "Beighton, Solomon and Soskolne 1973, Methods pp413–414; age context separately Malfait2017 p17",
+              "url": "https://doi.org/10.1136/ard.32.5.413",
+              "retrievalURL": "https://dupuytrens.org/DupPDFs/1973_Beighton.pdf",
+              "file": "beighton-1973-original-final27.pdf",
+              "readPages": [
+                1,
+                2
+              ],
+              "observations": "Each of nine maneuvers contributes one point: bilateral fifth finger, thumb, elbow and knee tests, and trunk flexion. Original population was a Tswana community in Phokeng. This bank checks the sum, not maneuver performance or an hEDS diagnosis.",
+              "unchecked": [
+                "Remaining original pages not included in this new visual reading.",
+                "Acquired limitations, historical questionnaire, and criteria2/3 are not independently tested by the point bank."
+              ],
+              "sha256": "e51a134d022325f867c421704af79baa6bec91890138d34368365802dba55b69",
+              "visualEvidence": [
+                {
+                  "file": "beighton-1973-original-final27-p1.png",
+                  "sha256": "bbe08fdf1f2e2bbdfc6c5ecd0fa60ab75a0868b4176d6b28ad30c41d2dbf749a"
+                },
+                {
+                  "file": "beighton-1973-original-final27-p2.png",
+                  "sha256": "508fffc67f6720eb65d5b5baa08575c4e872801343f05b34392da1a477acf45e"
+                }
+              ],
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "sourceRightsApproval": "not-performed"
+            },
+            {
+              "id": "escore-de-beighton",
+              "edition": "Malfait2017, Criterion1, printed p17",
+              "url": "https://doi.org/10.1002/ajmg.c.31552",
+              "retrievalURL": "https://www.ehlers-danlos.com/wp-content/uploads/2022/12/Malfait_et_al-2017-American_Journal_of_Medical_Genetics_Part_C__Seminars_in_Medical_Genetics.pdf",
+              "file": "beighton-malfait-2017-final27.pdf",
+              "readPages": [
+                10
+              ],
+              "observations": "2017 context uses thresholds6 prepubertal,5 pubertal through50,4 over50; diagnosis requires three criteria and exclusion of alternatives. Age variants in the bank check that the numeric sum is invariant, not clinical classification or a newer pediatric framework.",
+              "unchecked": [
+                "No complete paper or clinical criteria adoption approval."
+              ],
+              "sha256": "59a98a7a1502258e61b86ae7d5dc5ae64ccc1b39c8dac9280944e45817f904e0",
+              "visualEvidence": [
+                {
+                  "file": "beighton-malfait-2017-final27-p10.png",
+                  "sha256": "6be2bcb75ea70a69c479c8803e801386f47acdd0b0db848a621cc88f840694a9"
+                }
+              ],
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "sourceRightsApproval": "not-performed"
+            }
+          ],
+          "sourceReview": {
+            "file": "reports/review-20261003/three-score-primary-review-final27.json",
+            "sha256": "21364c8a477ff72e3a51bf662879a238fd28d90d2f24115065f9cf5224951068"
+          },
+          "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/three-score-source-comparison-final27.json",
+      "evidenceSha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517",
+      "independentPeer": {
+        "status": "passed",
+        "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+        "peer": {
+          "file": "reports/review-20261003/three-score-source-independent-review-western-final27-r2.json",
+          "sha256": "b4f511b270e60afd7d8375a5480403bad36d2e7c7043254505e6bef99c2f2809"
+        },
+        "peerScope": "Independent source-section peer and own assigned-point integer expectations, frozen before imports; three current adapters Node and same-source browser-compatible VM. This is a bounded sum check and does not approve the whole clinical instrument, rubric, population expansion, diagnosis, discharge, rights or professional translation.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+          "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 4608,
+      "actualVmExecutions": 4608,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/escore-de-beighton/calculator.js",
+          "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escore-de-beighton/calculator.js",
+          "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escore-de-beighton/calculator.js",
+          "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+        }
+      ],
+      "qualifications": [
+        "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+        "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/escore-de-beighton/calculator.js",
+          "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escore-de-beighton/calculator.js",
+          "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escore-de-beighton/calculator.js",
+          "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Beighton 1973:9 pontos; limiares etárioscritérios EDS 2017; sem novo diagnóstico automático",
+    "implementationVersion": "escore-de-beighton@native-2026-10-03+c1297ace3806",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1006136/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Um ponto por manobra positiva, de cada lado quando bilateral: 5º dedo (2), polegar (2), cotovelo (2), joelho (2) e flexão do tronco (1). Total de 0 a 9. Hipermobilidade generalizada (critérios de 2017): ≥ 6 em crianças e adolescentes pré-púberes; ≥ 5 de púberes até 50 anos; ≥ 4 acima de 50 anos.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "faixa",
+            "label": "Faixa etária",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "pre": "Pré-púbere",
+              "adulto": "Púbere até 50 anos",
+              "idoso": "Acima de 50 anos"
+            }
+          },
+          {
+            "key": "dedo_d",
+            "label": "Extensão passiva do 5º dedo <strong>direito</strong> além de 90°",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dedo_e",
+            "label": "Extensão passiva do 5º dedo <strong>esquerdo</strong> além de 90°",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "polegar_d",
+            "label": "Polegar <strong>direito</strong> toca o antebraço (flexão passiva)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "polegar_e",
+            "label": "Polegar <strong>esquerdo</strong> toca o antebraço (flexão passiva)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cotovelo_d",
+            "label": "Hiperextensão do cotovelo <strong>direito</strong> além de 10°",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cotovelo_e",
+            "label": "Hiperextensão do cotovelo <strong>esquerdo</strong> além de 10°",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "joelho_d",
+            "label": "Hiperextensão do joelho <strong>direito</strong> além de 10°",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "joelho_e",
+            "label": "Hiperextensão do joelho <strong>esquerdo</strong> além de 10°",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tronco",
+            "label": "Apoia as palmas das mãos no chão com os joelhos estendidos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "1aec7cb467e2f98259ea3303cb96f27f0aba59a22b4df7e65c2d557c551e8143"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Beighton P, Solomon L, Soskolne CL. Articular mobility in an African population. Ann Rheum Dis, 1973.",
+          "url": "https://doi.org/10.1136/ard.32.5.413",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Articular mobility in an African population.",
+            "year": "1973",
+            "firstPublicationDate": "1973-09-01",
+            "doi": "10.1136/ard.32.5.413",
+            "pmid": "4751776",
+            "pmcid": "PMC1006136",
+            "journal": "Annals of the rheumatic diseases",
+            "authors": "Beighton P, Solomon L, Soskolne CL."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1006136/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Malfait F et al. The 2017 international classification of the Ehlers-Danlos syndromes. Am J Med Genet C Semin Med Genet, 2017.",
+          "url": "https://doi.org/10.1002/ajmg.c.31552",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The 2017 international classification of the Ehlers-Danlos syndromes.",
+            "year": "2017",
+            "firstPublicationDate": "2017-03-01",
+            "doi": "10.1002/ajmg.c.31552",
+            "pmid": "28306229",
+            "journal": "American journal of medical genetics. Part C, Seminars in medical genetics",
+            "authors": "Malfait F, Francomano C, Byers P, Belmont J, Berglund B, Black J, Bloom L, Bowen JM, Brady AF, Burrows NP, Castori M, Cohen H, Colombi M, Demirdas S, De Backer J, De Paepe A, Fournel-Gigleux S, Frank M, Ghali N, Giunta C, Grahame R, Hakim A, Jeunemaitre X, Johnson D, Juul-Kristensen B, Kapferer-Seebacher I, Kazkaz H, Kosho T, Lavallee ME, Levy H, Mendoza-Londono R, Pepin M, Pope FM, Reinstein E, Robert L, Rohrbach M, Sanders L, Sobey GJ, Van Damme T, Vandersteen A, van Mourik C, Voermans N, Wheeldon N, Zschocke J, Tinkle B."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/28306229/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "58f86260a7d63981a345de52029a39255616023e8113e05af630c8eb37119c16",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:08:23.391Z",
+        "total": 1536,
+        "passed": 1536,
+        "sourceRowCount": 1536,
+        "uniqueApiInputCount": 1536,
+        "sourceContextCount": 1536,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "71f8968a562283b37c82687fa08580f9f2bc18edc507c0070608d85a3e675bc2",
+          "total": 1536,
+          "bankRowCount": 1536,
+          "uniqueApiInputCount": 1536,
+          "sourceContextCount": 1536,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+              "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/three-score-source-comparison-final27.json",
+            "sha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517"
+          },
+          "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 1536,
+          "uniqueApiInputs": 1536,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+            "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+          }
+        },
+        "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "sources": [
+          {
+            "id": "escore-de-beighton",
+            "declaredEdition": "Beighton 1973:9 pontos; limiares etárioscritérios EDS 2017; sem novo diagnóstico automático",
+            "readRecords": [
+              {
+                "id": "escore-de-beighton",
+                "edition": "Beighton, Solomon and Soskolne 1973, Methods pp413–414; age context separately Malfait2017 p17",
+                "url": "https://doi.org/10.1136/ard.32.5.413",
+                "retrievalURL": "https://dupuytrens.org/DupPDFs/1973_Beighton.pdf",
+                "file": "beighton-1973-original-final27.pdf",
+                "readPages": [
+                  1,
+                  2
+                ],
+                "observations": "Each of nine maneuvers contributes one point: bilateral fifth finger, thumb, elbow and knee tests, and trunk flexion. Original population was a Tswana community in Phokeng. This bank checks the sum, not maneuver performance or an hEDS diagnosis.",
+                "unchecked": [
+                  "Remaining original pages not included in this new visual reading.",
+                  "Acquired limitations, historical questionnaire, and criteria2/3 are not independently tested by the point bank."
+                ],
+                "sha256": "e51a134d022325f867c421704af79baa6bec91890138d34368365802dba55b69",
+                "visualEvidence": [
+                  {
+                    "file": "beighton-1973-original-final27-p1.png",
+                    "sha256": "bbe08fdf1f2e2bbdfc6c5ecd0fa60ab75a0868b4176d6b28ad30c41d2dbf749a"
+                  },
+                  {
+                    "file": "beighton-1973-original-final27-p2.png",
+                    "sha256": "508fffc67f6720eb65d5b5baa08575c4e872801343f05b34392da1a477acf45e"
+                  }
+                ],
+                "clinicalApproval": "not-performed",
+                "professionalLanguageApproval": "not-performed",
+                "sourceRightsApproval": "not-performed"
+              },
+              {
+                "id": "escore-de-beighton",
+                "edition": "Malfait2017, Criterion1, printed p17",
+                "url": "https://doi.org/10.1002/ajmg.c.31552",
+                "retrievalURL": "https://www.ehlers-danlos.com/wp-content/uploads/2022/12/Malfait_et_al-2017-American_Journal_of_Medical_Genetics_Part_C__Seminars_in_Medical_Genetics.pdf",
+                "file": "beighton-malfait-2017-final27.pdf",
+                "readPages": [
+                  10
+                ],
+                "observations": "2017 context uses thresholds6 prepubertal,5 pubertal through50,4 over50; diagnosis requires three criteria and exclusion of alternatives. Age variants in the bank check that the numeric sum is invariant, not clinical classification or a newer pediatric framework.",
+                "unchecked": [
+                  "No complete paper or clinical criteria adoption approval."
+                ],
+                "sha256": "59a98a7a1502258e61b86ae7d5dc5ae64ccc1b39c8dac9280944e45817f904e0",
+                "visualEvidence": [
+                  {
+                    "file": "beighton-malfait-2017-final27-p10.png",
+                    "sha256": "6be2bcb75ea70a69c479c8803e801386f47acdd0b0db848a621cc88f840694a9"
+                  }
+                ],
+                "clinicalApproval": "not-performed",
+                "professionalLanguageApproval": "not-performed",
+                "sourceRightsApproval": "not-performed"
+              }
+            ],
+            "sourceReview": {
+              "file": "reports/review-20261003/three-score-primary-review-final27.json",
+              "sha256": "21364c8a477ff72e3a51bf662879a238fd28d90d2f24115065f9cf5224951068"
+            },
+            "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/three-score-source-comparison-final27.json",
+        "evidenceSha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517",
+        "independentPeer": {
+          "status": "passed",
+          "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+          "peer": {
+            "file": "reports/review-20261003/three-score-source-independent-review-western-final27-r2.json",
+            "sha256": "b4f511b270e60afd7d8375a5480403bad36d2e7c7043254505e6bef99c2f2809"
+          },
+          "peerScope": "Independent source-section peer and own assigned-point integer expectations, frozen before imports; three current adapters Node and same-source browser-compatible VM. This is a bounded sum check and does not approve the whole clinical instrument, rubric, population expansion, diagnosis, discharge, rights or professional translation.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+            "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 4608,
+        "actualVmExecutions": 4608,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/escore-de-beighton/calculator.js",
+            "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escore-de-beighton/calculator.js",
+            "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escore-de-beighton/calculator.js",
+            "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+          }
+        ],
+        "qualifications": [
+          "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+          "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+          "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/escore-de-beighton/calculator.js",
+            "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escore-de-beighton/calculator.js",
+            "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escore-de-beighton/calculator.js",
+            "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+    },
+    "limits": "O Beighton avalia hipermobilidade articular generalizada; não diagnostica, sozinho, síndrome de Ehlers–Danlos hipermóvel. Na classificação de 2017, os cortes são pelo menos 6 em crianças e adolescentes pré-púberes, 5 em púberes e adultos até 50 anos, e 4 acima de 50 anos. Cirurgia, amputação, uso de cadeira de rodas, lesões e outras limitações adquiridas podem impedir manobras; documente-as. O histórico de hipermobilidade pode complementar o exame, mas a classificação de 2017 ressalva que o questionário histórico de cinco perguntas não havia sido validado em crianças. O diagnóstico de hEDS exige os três conjuntos de critérios e a exclusão de outras causas.",
+    "limitsEvidence": {
+      "status": "specific-primary-classification-sections-read",
+      "sources": [
+        {
+          "url": "https://www.ehlers-danlos.com/wp-content/uploads/2022/12/Malfait_et_al-2017-American_Journal_of_Medical_Genetics_Part_C__Seminars_in_Medical_Genetics.pdf",
+          "edition": "Malfait2017",
+          "readScope": "Direct primary PDF clinical criteria1–3, age cutoffs, acquired mobility limitations,5PQ and exclusions; named pages/sections, not entire paper."
+        },
+        {
+          "url": "https://doi.org/10.1136/ard.32.5.413",
+          "edition": "Beighton1973",
+          "readScope": "Identity only."
+        }
+      ],
+      "populationScope": "Age-dependent generalized joint hypermobility assessment, not standalone hEDS diagnosis.",
+      "remainingChecks": [
+        "Original1973 paper not newly fully read.",
+        "This draft documents2017 conditions, not adoption or approval of2023 pediatric framework."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-de-beighton/calculator.js",
+    "bytes": 5802,
+    "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "f6bd7c16ef6ac4b28f01c358092f732c1f41cdfe3be6201a2b85e9aa3c67c337",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "d931457b4ee8b6585d3e1e926a77db5a62d06b3d999e8a41610196ea16a79f62",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "d931457b4ee8b6585d3e1e926a77db5a62d06b3d999e8a41610196ea16a79f62",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

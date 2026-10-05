@@ -1,0 +1,277 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field faixa",
+    "input": {
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "faixa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field faixa",
+    "input": {
+      "faixa": "",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "faixa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option faixa",
+    "input": {
+      "faixa": "__ELUCENIA_INVALID_OPTION__",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "faixa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dedo_d",
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": "2",
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dedo_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dedo_e",
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": true,
+      "dedo_e": "2",
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dedo_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean polegar_d",
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": "2",
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "polegar_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean polegar_e",
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": "2",
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "polegar_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cotovelo_d",
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": "2",
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cotovelo_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cotovelo_e",
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": "2",
+      "joelho_d": false,
+      "joelho_e": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cotovelo_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean joelho_d",
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": "2",
+      "joelho_e": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "joelho_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean joelho_e",
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "joelho_e"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean tronco",
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": "2",
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

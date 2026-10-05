@@ -1,21 +1,9 @@
 [
   {
-    "label": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
-    "input": {
-      "faixa": "adulto",
-      "dedo_d": true,
-      "dedo_e": true,
-      "polegar_d": true,
-      "polegar_e": true,
-      "tronco": true
-    },
-    "expected": {
-      "raw": {
-        "score": 5,
-        "positivo": 1
-      },
-      "level": "mid"
-    },
+    "id": "escore-de-beighton",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
     "originalInput": {
       "faixa": "adulto",
       "dedo_d": true,
@@ -24,17 +12,70 @@
       "polegar_e": true,
       "tronco": true
     },
-    "expandedZeroOptions": []
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false
+    },
+    "expected": {
+      "raw": {
+        "score": 5,
+        "positivo": 1
+      },
+      "level": "mid"
+    },
+    "recordedResult": {
+      "main": [
+        "5",
+        "de 9"
+      ],
+      "label": "Escore de Beighton",
+      "raw": {
+        "score": 5,
+        "cut": 5,
+        "positivo": 1
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
-    "input": {
+    "id": "escore-de-beighton",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+    "originalInput": {
       "faixa": "pre",
       "dedo_d": true,
       "dedo_e": true,
       "polegar_d": true,
       "polegar_e": true,
       "tronco": true
+    },
+    "input": {
+      "faixa": "pre",
+      "dedo_d": true,
+      "dedo_e": true,
+      "polegar_d": true,
+      "polegar_e": true,
+      "tronco": true,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false
     },
     "expected": {
       "raw": {
@@ -43,24 +84,50 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "faixa": "pre",
-      "dedo_d": true,
-      "dedo_e": true,
-      "polegar_d": true,
-      "polegar_e": true,
-      "tronco": true
+    "recordedResult": {
+      "main": [
+        "5",
+        "de 9"
+      ],
+      "label": "Escore de Beighton",
+      "raw": {
+        "score": 5,
+        "cut": 6,
+        "positivo": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
-    "input": {
+    "id": "escore-de-beighton",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+    "originalInput": {
       "faixa": "idoso",
       "cotovelo_d": true,
       "cotovelo_e": true,
       "joelho_d": true,
       "joelho_e": true
+    },
+    "input": {
+      "faixa": "idoso",
+      "cotovelo_d": true,
+      "cotovelo_e": true,
+      "joelho_d": true,
+      "joelho_e": true,
+      "dedo_d": false,
+      "dedo_e": false,
+      "polegar_d": false,
+      "polegar_e": false,
+      "tronco": false
     },
     "expected": {
       "raw": {
@@ -69,19 +136,46 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "faixa": "idoso",
-      "cotovelo_d": true,
-      "cotovelo_e": true,
-      "joelho_d": true,
-      "joelho_e": true
+    "recordedResult": {
+      "main": [
+        "4",
+        "de 9"
+      ],
+      "label": "Escore de Beighton",
+      "raw": {
+        "score": 4,
+        "cut": 4,
+        "positivo": 1
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Adulto sem manobras positivas: 0",
-    "input": {
+    "id": "escore-de-beighton",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Adulto sem manobras positivas: 0",
+    "originalInput": {
       "faixa": "adulto"
+    },
+    "input": {
+      "faixa": "adulto",
+      "dedo_d": false,
+      "dedo_e": false,
+      "polegar_d": false,
+      "polegar_e": false,
+      "cotovelo_d": false,
+      "cotovelo_e": false,
+      "joelho_d": false,
+      "joelho_e": false,
+      "tronco": false
     },
     "expected": {
       "raw": {
@@ -89,9 +183,25 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "faixa": "adulto"
+    "recordedResult": {
+      "main": [
+        "0",
+        "de 9"
+      ],
+      "label": "Escore de Beighton",
+      "raw": {
+        "score": 0,
+        "cut": 5,
+        "positivo": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
