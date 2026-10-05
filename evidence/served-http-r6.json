@@ -1,0 +1,1107 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "escore-de-beighton",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/escore-de-beighton/calculator.js",
+    "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732",
+    "bytes": 5802
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "escore-de-beighton",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+      "originalInput": {
+        "faixa": "adulto",
+        "dedo_d": true,
+        "dedo_e": true,
+        "polegar_d": true,
+        "polegar_e": true,
+        "tronco": true
+      },
+      "input": {
+        "faixa": "adulto",
+        "dedo_d": true,
+        "dedo_e": true,
+        "polegar_d": true,
+        "polegar_e": true,
+        "tronco": true,
+        "cotovelo_d": false,
+        "cotovelo_e": false,
+        "joelho_d": false,
+        "joelho_e": false
+      },
+      "amendments": [
+        {
+          "field": "cotovelo_d",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cotovelo_e",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "joelho_d",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "joelho_e",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "score": 5,
+          "positivo": 1
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "5",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "raw": {
+          "score": 5,
+          "cut": 5,
+          "positivo": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "faixa": "adulto",
+            "dedo_d": true,
+            "dedo_e": true,
+            "polegar_d": true,
+            "polegar_e": true,
+            "tronco": true,
+            "cotovelo_d": false,
+            "cotovelo_e": false,
+            "joelho_d": false,
+            "joelho_e": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+          "startedAt": "2026-10-05T17:37:24.476Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-de-beighton",
+              "main": [
+                "5",
+                "de 9"
+              ],
+              "label": "Escore de Beighton",
+              "raw": {
+                "score": 5,
+                "cut": 5,
+                "positivo": 1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "893c199d032ab00eec0ce28416507caf6ddc9510e3a20ad9e0cd759841282db6",
+          "bytes": 163,
+          "elapsedMs": 5.023600000000442
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+        "startedAt": "2026-10-05T17:37:24.476Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-de-beighton",
+            "main": [
+              "5",
+              "de 9"
+            ],
+            "label": "Escore de Beighton",
+            "raw": {
+              "score": 5,
+              "cut": 5,
+              "positivo": 1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "893c199d032ab00eec0ce28416507caf6ddc9510e3a20ad9e0cd759841282db6",
+        "bytes": 163,
+        "elapsedMs": 5.023600000000442
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.positivo",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cut",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.positivo",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "5",
+            "obtained": "5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 9",
+            "obtained": "de 9",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-de-beighton",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+      "originalInput": {
+        "faixa": "pre",
+        "dedo_d": true,
+        "dedo_e": true,
+        "polegar_d": true,
+        "polegar_e": true,
+        "tronco": true
+      },
+      "input": {
+        "faixa": "pre",
+        "dedo_d": true,
+        "dedo_e": true,
+        "polegar_d": true,
+        "polegar_e": true,
+        "tronco": true,
+        "cotovelo_d": false,
+        "cotovelo_e": false,
+        "joelho_d": false,
+        "joelho_e": false
+      },
+      "amendments": [
+        {
+          "field": "cotovelo_d",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cotovelo_e",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "joelho_d",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "joelho_e",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "score": 5,
+          "positivo": 0
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "5",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "raw": {
+          "score": 5,
+          "cut": 6,
+          "positivo": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "faixa": "pre",
+            "dedo_d": true,
+            "dedo_e": true,
+            "polegar_d": true,
+            "polegar_e": true,
+            "tronco": true,
+            "cotovelo_d": false,
+            "cotovelo_e": false,
+            "joelho_d": false,
+            "joelho_e": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+          "startedAt": "2026-10-05T17:37:24.788Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-de-beighton",
+              "main": [
+                "5",
+                "de 9"
+              ],
+              "label": "Escore de Beighton",
+              "raw": {
+                "score": 5,
+                "cut": 6,
+                "positivo": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "4618a274f57833c98539df44850dc728e920cedd8b8561dbb10e0790771c260c",
+          "bytes": 163,
+          "elapsedMs": 3.487699999997858
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+        "startedAt": "2026-10-05T17:37:24.788Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-de-beighton",
+            "main": [
+              "5",
+              "de 9"
+            ],
+            "label": "Escore de Beighton",
+            "raw": {
+              "score": 5,
+              "cut": 6,
+              "positivo": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "4618a274f57833c98539df44850dc728e920cedd8b8561dbb10e0790771c260c",
+        "bytes": 163,
+        "elapsedMs": 3.487699999997858
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.positivo",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cut",
+            "expected": 6,
+            "obtained": 6,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.positivo",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "5",
+            "obtained": "5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 9",
+            "obtained": "de 9",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-de-beighton",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+      "originalInput": {
+        "faixa": "idoso",
+        "cotovelo_d": true,
+        "cotovelo_e": true,
+        "joelho_d": true,
+        "joelho_e": true
+      },
+      "input": {
+        "faixa": "idoso",
+        "cotovelo_d": true,
+        "cotovelo_e": true,
+        "joelho_d": true,
+        "joelho_e": true,
+        "dedo_d": false,
+        "dedo_e": false,
+        "polegar_d": false,
+        "polegar_e": false,
+        "tronco": false
+      },
+      "amendments": [
+        {
+          "field": "dedo_d",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "dedo_e",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "polegar_d",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "polegar_e",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "tronco",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "score": 4,
+          "positivo": 1
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "4",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "raw": {
+          "score": 4,
+          "cut": 4,
+          "positivo": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "faixa": "idoso",
+            "cotovelo_d": true,
+            "cotovelo_e": true,
+            "joelho_d": true,
+            "joelho_e": true,
+            "dedo_d": false,
+            "dedo_e": false,
+            "polegar_d": false,
+            "polegar_e": false,
+            "tronco": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+          "startedAt": "2026-10-05T17:37:25.100Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-de-beighton",
+              "main": [
+                "4",
+                "de 9"
+              ],
+              "label": "Escore de Beighton",
+              "raw": {
+                "score": 4,
+                "cut": 4,
+                "positivo": 1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "523c4ca072c34509b9e1f4142783f5ca1f1139795a17bc7ee32beac4a1dbde1e",
+          "bytes": 163,
+          "elapsedMs": 4.7326000000030035
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+        "startedAt": "2026-10-05T17:37:25.100Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-de-beighton",
+            "main": [
+              "4",
+              "de 9"
+            ],
+            "label": "Escore de Beighton",
+            "raw": {
+              "score": 4,
+              "cut": 4,
+              "positivo": 1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "523c4ca072c34509b9e1f4142783f5ca1f1139795a17bc7ee32beac4a1dbde1e",
+        "bytes": 163,
+        "elapsedMs": 4.7326000000030035
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.positivo",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cut",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.positivo",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "4",
+            "obtained": "4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 9",
+            "obtained": "de 9",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-de-beighton",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Adulto sem manobras positivas: 0",
+      "originalInput": {
+        "faixa": "adulto"
+      },
+      "input": {
+        "faixa": "adulto",
+        "dedo_d": false,
+        "dedo_e": false,
+        "polegar_d": false,
+        "polegar_e": false,
+        "cotovelo_d": false,
+        "cotovelo_e": false,
+        "joelho_d": false,
+        "joelho_e": false,
+        "tronco": false
+      },
+      "amendments": [
+        {
+          "field": "dedo_d",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "dedo_e",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "polegar_d",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "polegar_e",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cotovelo_d",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cotovelo_e",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "joelho_d",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "joelho_e",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "tronco",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "score": 0
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "0",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "raw": {
+          "score": 0,
+          "cut": 5,
+          "positivo": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "faixa": "adulto",
+            "dedo_d": false,
+            "dedo_e": false,
+            "polegar_d": false,
+            "polegar_e": false,
+            "cotovelo_d": false,
+            "cotovelo_e": false,
+            "joelho_d": false,
+            "joelho_e": false,
+            "tronco": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+          "startedAt": "2026-10-05T17:37:25.414Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-de-beighton",
+              "main": [
+                "0",
+                "de 9"
+              ],
+              "label": "Escore de Beighton",
+              "raw": {
+                "score": 0,
+                "cut": 5,
+                "positivo": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "2282a517bb8712ad71ec1417caf90fc6e2c753060db0331c7417e7ea841437bf",
+          "bytes": 163,
+          "elapsedMs": 3.6013999999995576
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-beighton/calculate",
+        "startedAt": "2026-10-05T17:37:25.414Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-de-beighton",
+            "main": [
+              "0",
+              "de 9"
+            ],
+            "label": "Escore de Beighton",
+            "raw": {
+              "score": 0,
+              "cut": 5,
+              "positivo": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "2282a517bb8712ad71ec1417caf90fc6e2c753060db0331c7417e7ea841437bf",
+        "bytes": 163,
+        "elapsedMs": 3.6013999999995576
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.cut",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.positivo",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "0",
+            "obtained": "0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 9",
+            "obtained": "de 9",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
