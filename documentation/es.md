@@ -101,3 +101,31 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Hipermovilidad articular generalizada (punto de corte ≥ 5 para el grupo de edad)
+
+La hipermovilidad no es una enfermedad: investigue dolor crónico, luxaciones y signos sistémicos antes de pensar en el síndrome de Ehlers-Danlos hipermóvil.
+
+
+### 2
+
+Por debajo del punto de corte de hipermovilidad generalizada (≥ 6 para el grupo de edad)
+
+
+### 3
+
+Hipermovilidad articular generalizada (punto de corte ≥ 4 para el grupo de edad)
+
+La hipermovilidad no es una enfermedad: investigue dolor crónico, luxaciones y signos sistémicos antes de pensar en el síndrome de Ehlers-Danlos hipermóvil.
+
+
+### 4
+
+Por debajo del punto de corte de hipermovilidad generalizada (≥ 5 para el grupo de edad)
+

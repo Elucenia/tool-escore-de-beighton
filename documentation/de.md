@@ -101,3 +101,31 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Generalisierte Gelenkhypermobilität (Cutoff ≥ 5 für die Altersgruppe)
+
+Hypermobilität ist keine Krankheit: chronische Schmerzen, Luxationen und systemische Zeichen abklären, bevor an ein hypermobiles Ehlers-Danlos-Syndrom gedacht wird.
+
+
+### 2
+
+Unterhalb des Cutoffs für generalisierte Hypermobilität (≥ 6 für die Altersgruppe)
+
+
+### 3
+
+Generalisierte Gelenkhypermobilität (Cutoff ≥ 4 für die Altersgruppe)
+
+Hypermobilität ist keine Krankheit: chronische Schmerzen, Luxationen und systemische Zeichen abklären, bevor an ein hypermobiles Ehlers-Danlos-Syndrom gedacht wird.
+
+
+### 4
+
+Unterhalb des Cutoffs für generalisierte Hypermobilität (≥ 5 für die Altersgruppe)
+

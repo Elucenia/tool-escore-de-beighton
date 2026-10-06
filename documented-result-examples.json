@@ -1,0 +1,715 @@
+{
+  "id": "escore-de-beighton",
+  "implementationVersion": "escore-de-beighton@native-2026-10-05+968122acb4b0",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hipermobilidade articular generalizada (corte ≥ 5 para a faixa etária)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Hipermobilidade não é doença: investigue dor crônica, luxações e sinais sistêmicos antes de pensar em síndrome de Ehlers-Danlos hipermóvel.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abaixo do corte de hipermobilidade generalizada (≥ 6 para a faixa etária)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hipermobilidade articular generalizada (corte ≥ 4 para a faixa etária)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Hipermobilidade não é doença: investigue dor crônica, luxações e sinais sistêmicos antes de pensar em síndrome de Ehlers-Danlos hipermóvel.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto sem manobras positivas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Abaixo do corte de hipermobilidade generalizada (≥ 5 para a faixa etária)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Generalized joint hypermobility (cutoff ≥ 5 for the age group)",
+            "locale": "en",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "note": {
+            "text": "Hypermobility is not a disease: investigate chronic pain, dislocations, and systemic signs before considering hypermobile Ehlers-Danlos syndrome.",
+            "locale": "en",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Below the cutoff for generalized hypermobility (≥ 6 for the age group)",
+            "locale": "en",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              6
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Generalized joint hypermobility (cutoff ≥ 4 for the age group)",
+            "locale": "en",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              4
+            ]
+          },
+          "note": {
+            "text": "Hypermobility is not a disease: investigate chronic pain, dislocations, and systemic signs before considering hypermobile Ehlers-Danlos syndrome.",
+            "locale": "en",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto sem manobras positivas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Below the cutoff for generalized hypermobility (≥ 5 for the age group)",
+            "locale": "en",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hipermovilidad articular generalizada (punto de corte ≥ 5 para el grupo de edad)",
+            "locale": "es",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "note": {
+            "text": "La hipermovilidad no es una enfermedad: investigue dolor crónico, luxaciones y signos sistémicos antes de pensar en el síndrome de Ehlers-Danlos hipermóvil.",
+            "locale": "es",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Por debajo del punto de corte de hipermovilidad generalizada (≥ 6 para el grupo de edad)",
+            "locale": "es",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              6
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hipermovilidad articular generalizada (punto de corte ≥ 4 para el grupo de edad)",
+            "locale": "es",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              4
+            ]
+          },
+          "note": {
+            "text": "La hipermovilidad no es una enfermedad: investigue dolor crónico, luxaciones y signos sistémicos antes de pensar en el síndrome de Ehlers-Danlos hipermóvil.",
+            "locale": "es",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto sem manobras positivas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Por debajo del punto de corte de hipermovilidad generalizada (≥ 5 para el grupo de edad)",
+            "locale": "es",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hypermobilité articulaire généralisée (seuil ≥ 5 pour la tranche d’âge)",
+            "locale": "fr",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "note": {
+            "text": "L’hypermobilité n’est pas une maladie : rechercher une douleur chronique, des luxations et des signes systémiques avant d’envisager un syndrome d’Ehlers-Danlos hypermobile.",
+            "locale": "fr",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "En dessous du seuil d’hypermobilité généralisée (≥ 6 pour la tranche d’âge)",
+            "locale": "fr",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              6
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hypermobilité articulaire généralisée (seuil ≥ 4 pour la tranche d’âge)",
+            "locale": "fr",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              4
+            ]
+          },
+          "note": {
+            "text": "L’hypermobilité n’est pas une maladie : rechercher une douleur chronique, des luxations et des signes systémiques avant d’envisager un syndrome d’Ehlers-Danlos hypermobile.",
+            "locale": "fr",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto sem manobras positivas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "En dessous du seuil d’hypermobilité généralisée (≥ 5 pour la tranche d’âge)",
+            "locale": "fr",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Generalisierte Gelenkhypermobilität (Cutoff ≥ 5 für die Altersgruppe)",
+            "locale": "de",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "note": {
+            "text": "Hypermobilität ist keine Krankheit: chronische Schmerzen, Luxationen und systemische Zeichen abklären, bevor an ein hypermobiles Ehlers-Danlos-Syndrom gedacht wird.",
+            "locale": "de",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Unterhalb des Cutoffs für generalisierte Hypermobilität (≥ 6 für die Altersgruppe)",
+            "locale": "de",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              6
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Generalisierte Gelenkhypermobilität (Cutoff ≥ 4 für die Altersgruppe)",
+            "locale": "de",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              4
+            ]
+          },
+          "note": {
+            "text": "Hypermobilität ist keine Krankheit: chronische Schmerzen, Luxationen und systemische Zeichen abklären, bevor an ein hypermobiles Ehlers-Danlos-Syndrom gedacht wird.",
+            "locale": "de",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto sem manobras positivas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Unterhalb des Cutoffs für generalisierte Hypermobilität (≥ 5 für die Altersgruppe)",
+            "locale": "de",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ipermobilità articolare generalizzata (cut-off ≥ 5 per la fascia d’età)",
+            "locale": "it",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "note": {
+            "text": "L’ipermobilità non è una malattia: indagare dolore cronico, lussazioni e segni sistemici prima di pensare alla sindrome di Ehlers-Danlos ipermobile.",
+            "locale": "it",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Al di sotto del cut-off per l’ipermobilità generalizzata (≥ 6 per la fascia d’età)",
+            "locale": "it",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              6
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ipermobilità articolare generalizzata (cut-off ≥ 4 per la fascia d’età)",
+            "locale": "it",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              4
+            ]
+          },
+          "note": {
+            "text": "L’ipermobilità non è una malattia: indagare dolore cronico, lussazioni e segni sistemici prima di pensare alla sindrome di Ehlers-Danlos ipermobile.",
+            "locale": "it",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto sem manobras positivas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Al di sotto del cut-off per l’ipermobilità generalizzata (≥ 5 per la fascia d’età)",
+            "locale": "it",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "فرط حركة المفاصل المعمم (الحد الفاصل ≥ ٥ للفئة العمرية)",
+            "locale": "ar",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "note": {
+            "text": "فرط الحركة ليس مرضًا: استقصِ الألم المزمن والخلوع والعلامات الجهازية قبل التفكير في متلازمة إهلرز-دانلوس مفرطة الحركة.",
+            "locale": "ar",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "أدنى من الحد الفاصل لفرط الحركة المعمم (≥ ٦ للفئة العمرية)",
+            "locale": "ar",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              6
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "فرط حركة المفاصل المعمم (الحد الفاصل ≥ ٤ للفئة العمرية)",
+            "locale": "ar",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              4
+            ]
+          },
+          "note": {
+            "text": "فرط الحركة ليس مرضًا: استقصِ الألم المزمن والخلوع والعلامات الجهازية قبل التفكير في متلازمة إهلرز-دانلوس مفرطة الحركة.",
+            "locale": "ar",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto sem manobras positivas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "أدنى من الحد الفاصل لفرط الحركة المعمم (≥ ٥ للفئة العمرية)",
+            "locale": "ar",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "全身关节过度活动（该年龄组截点≥ 5）",
+            "locale": "zh",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "note": {
+            "text": "关节过度活动并非疾病：在考虑高移动型Ehlers-Danlos综合征之前，应先评估慢性疼痛、脱位和全身性体征。",
+            "locale": "zh",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低于全身性过度活动的截点（该年龄组≥ 6）",
+            "locale": "zh",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              6
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "全身关节过度活动（该年龄组截点≥ 4）",
+            "locale": "zh",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              4
+            ]
+          },
+          "note": {
+            "text": "关节过度活动并非疾病：在考虑高移动型Ehlers-Danlos综合征之前，应先评估慢性疼痛、脱位和全身性体征。",
+            "locale": "zh",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto sem manobras positivas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低于全身性过度活动的截点（该年龄组≥ 5）",
+            "locale": "zh",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "全身性関節過可動性（年齢群のカットオフ≥ 5）",
+            "locale": "ja",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "note": {
+            "text": "過可動性は病気ではない。ハイパーモバイル型エーラス・ダンロス症候群を考える前に、慢性疼痛、脱臼、全身徴候を評価する。",
+            "locale": "ja",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "全身性関節過可動性のカットオフ未満（年齢群で≥ 6）",
+            "locale": "ja",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              6
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "全身性関節過可動性（年齢群のカットオフ≥ 4）",
+            "locale": "ja",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              4
+            ]
+          },
+          "note": {
+            "text": "過可動性は病気ではない。ハイパーモバイル型エーラス・ダンロス症候群を考える前に、慢性疼痛、脱臼、全身徴候を評価する。",
+            "locale": "ja",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto sem manobras positivas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "全身性関節過可動性のカットオフ未満（年齢群で≥ 5）",
+            "locale": "ja",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सामान्यीकृत जोड़ अतिचलनशीलता (आयु समूह के लिए कटऑफ ≥ 5)",
+            "locale": "hi",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "note": {
+            "text": "हाइपरमोबिलिटी कोई बीमारी नहीं है: हाइपरमोबाइल एलर्स-डानलोस सिंड्रोम पर विचार करने से पहले क्रोनिक दर्द, अव्यवस्थाओं और प्रणालीगत संकेतों की जाँच करें।",
+            "locale": "hi",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सामान्यीकृत अतिचलनशीलता के कटऑफ से नीचे (आयु समूह के लिए ≥ 6)",
+            "locale": "hi",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              6
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सामान्यीकृत जोड़ अतिचलनशीलता (आयु समूह के लिए कटऑफ ≥ 4)",
+            "locale": "hi",
+            "template": "documented-authored-0c7bdff08258133dc66e",
+            "sourceNumbers": [
+              4
+            ]
+          },
+          "note": {
+            "text": "हाइपरमोबिलिटी कोई बीमारी नहीं है: हाइपरमोबाइल एलर्स-डानलोस सिंड्रोम पर विचार करने से पहले क्रोनिक दर्द, अव्यवस्थाओं और प्रणालीगत संकेतों की जाँच करें।",
+            "locale": "hi",
+            "template": "documented-authored-ca333608d8f7e87e5988"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto sem manobras positivas: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "सामान्यीकृत अतिचलनशीलता के कटऑफ से नीचे (आयु समूह के लिए ≥ 5)",
+            "locale": "hi",
+            "template": "documented-authored-6fd04ae29317c837e72c",
+            "sourceNumbers": [
+              5
+            ]
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

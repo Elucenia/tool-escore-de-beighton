@@ -101,3 +101,31 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Ipermobilità articolare generalizzata (cut-off ≥ 5 per la fascia d’età)
+
+L’ipermobilità non è una malattia: indagare dolore cronico, lussazioni e segni sistemici prima di pensare alla sindrome di Ehlers-Danlos ipermobile.
+
+
+### 2
+
+Al di sotto del cut-off per l’ipermobilità generalizzata (≥ 6 per la fascia d’età)
+
+
+### 3
+
+Ipermobilità articolare generalizzata (cut-off ≥ 4 per la fascia d’età)
+
+L’ipermobilità non è una malattia: indagare dolore cronico, lussazioni e segni sistemici prima di pensare alla sindrome di Ehlers-Danlos ipermobile.
+
+
+### 4
+
+Al di sotto del cut-off per l’ipermobilità generalizzata (≥ 5 per la fascia d’età)
+

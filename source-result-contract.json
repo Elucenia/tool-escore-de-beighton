@@ -1,0 +1,271 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escore-de-beighton",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "e02ed4671ac463b70a300a9f807c94eaa715b0c3",
+    "oldEngineSha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732",
+    "currentEngineSha256": "968122acb4b05e240f92b70a422ec963a18560ca536020661e93f34c7ce464d9"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Adulto de 30 anos com 5 manobras positivas: hipermobilidade (corte 5)",
+      "input": {
+        "faixa": "adulto",
+        "dedo_d": true,
+        "dedo_e": true,
+        "polegar_d": true,
+        "polegar_e": true,
+        "tronco": true,
+        "cotovelo_d": false,
+        "cotovelo_e": false,
+        "joelho_d": false,
+        "joelho_e": false
+      },
+      "publicOutput": {
+        "id": "escore-de-beighton",
+        "main": [
+          "5",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "raw": {
+          "score": 5,
+          "cut": 5,
+          "positivo": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 5,
+          "positivo": 1
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "level": "mid",
+        "verdict": "Hipermobilidade articular generalizada (corte ≥ 5 para a faixa etária)",
+        "note": "Hipermobilidade não é doença: investigue dor crônica, luxações e sinais sistêmicos antes de pensar em síndrome de Ehlers-Danlos hipermóvel.",
+        "raw": {
+          "score": 5,
+          "cut": 5,
+          "positivo": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Criança pré-púbere com as mesmas 5 manobras: abaixo do corte (6)",
+      "input": {
+        "faixa": "pre",
+        "dedo_d": true,
+        "dedo_e": true,
+        "polegar_d": true,
+        "polegar_e": true,
+        "tronco": true,
+        "cotovelo_d": false,
+        "cotovelo_e": false,
+        "joelho_d": false,
+        "joelho_e": false
+      },
+      "publicOutput": {
+        "id": "escore-de-beighton",
+        "main": [
+          "5",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "raw": {
+          "score": 5,
+          "cut": 6,
+          "positivo": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 5,
+          "positivo": 0
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "level": "low",
+        "verdict": "Abaixo do corte de hipermobilidade generalizada (≥ 6 para a faixa etária)",
+        "note": "",
+        "raw": {
+          "score": 5,
+          "cut": 6,
+          "positivo": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Acima de 50 anos com 4 manobras (cotovelos e joelhos): hipermobilidade (corte 4)",
+      "input": {
+        "faixa": "idoso",
+        "cotovelo_d": true,
+        "cotovelo_e": true,
+        "joelho_d": true,
+        "joelho_e": true,
+        "dedo_d": false,
+        "dedo_e": false,
+        "polegar_d": false,
+        "polegar_e": false,
+        "tronco": false
+      },
+      "publicOutput": {
+        "id": "escore-de-beighton",
+        "main": [
+          "4",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "raw": {
+          "score": 4,
+          "cut": 4,
+          "positivo": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 4,
+          "positivo": 1
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "level": "mid",
+        "verdict": "Hipermobilidade articular generalizada (corte ≥ 4 para a faixa etária)",
+        "note": "Hipermobilidade não é doença: investigue dor crônica, luxações e sinais sistêmicos antes de pensar em síndrome de Ehlers-Danlos hipermóvel.",
+        "raw": {
+          "score": 4,
+          "cut": 4,
+          "positivo": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Adulto sem manobras positivas: 0",
+      "input": {
+        "faixa": "adulto",
+        "dedo_d": false,
+        "dedo_e": false,
+        "polegar_d": false,
+        "polegar_e": false,
+        "cotovelo_d": false,
+        "cotovelo_e": false,
+        "joelho_d": false,
+        "joelho_e": false,
+        "tronco": false
+      },
+      "publicOutput": {
+        "id": "escore-de-beighton",
+        "main": [
+          "0",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "raw": {
+          "score": 0,
+          "cut": 5,
+          "positivo": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 0
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "de 9"
+        ],
+        "label": "Escore de Beighton",
+        "level": "low",
+        "verdict": "Abaixo do corte de hipermobilidade generalizada (≥ 5 para a faixa etária)",
+        "note": "",
+        "raw": {
+          "score": 0,
+          "cut": 5,
+          "positivo": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    }
+  ]
+}

@@ -101,3 +101,31 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Hipermobilidade articular generalizada (corte ≥ 5 para a faixa etária)
+
+Hipermobilidade não é doença: investigue dor crônica, luxações e sinais sistêmicos antes de pensar em síndrome de Ehlers-Danlos hipermóvel.
+
+
+### 2
+
+Abaixo do corte de hipermobilidade generalizada (≥ 6 para a faixa etária)
+
+
+### 3
+
+Hipermobilidade articular generalizada (corte ≥ 4 para a faixa etária)
+
+Hipermobilidade não é doença: investigue dor crônica, luxações e sinais sistêmicos antes de pensar em síndrome de Ehlers-Danlos hipermóvel.
+
+
+### 4
+
+Abaixo do corte de hipermobilidade generalizada (≥ 5 para a faixa etária)
+

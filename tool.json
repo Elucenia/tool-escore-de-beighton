@@ -351,7 +351,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Beighton 1973:9 pontos; limiares etárioscritérios EDS 2017; sem novo diagnóstico automático",
-    "implementationVersion": "escore-de-beighton@native-2026-10-03+c1297ace3806",
+    "implementationVersion": "escore-de-beighton@native-2026-10-05+968122acb4b0",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1006136/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -669,7 +669,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+      "implementationHash": "968122acb4b05e240f92b70a422ec963a18560ca536020661e93f34c7ce464d9",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-de-beighton@native-2026-10-03+c1297ace3806",
+          "previousImplementationHash": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732",
+          "implementationHash": "968122acb4b05e240f92b70a422ec963a18560ca536020661e93f34c7ce464d9",
+          "scientificBodySha256": "ce8e16b3c330141036ab737cf2d47f72de9a133fc2f8fc9bbff0fb95e107c4c5",
+          "metadataContractHash": "1aec7cb467e2f98259ea3303cb96f27f0aba59a22b4df7e65c2d557c551e8143",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O Beighton avalia hipermobilidade articular generalizada; não diagnostica, sozinho, síndrome de Ehlers–Danlos hipermóvel. Na classificação de 2017, os cortes são pelo menos 6 em crianças e adolescentes pré-púberes, 5 em púberes e adultos até 50 anos, e 4 acima de 50 anos. Cirurgia, amputação, uso de cadeira de rodas, lesões e outras limitações adquiridas podem impedir manobras; documente-as. O histórico de hipermobilidade pode complementar o exame, mas a classificação de 2017 ressalva que o questionário histórico de cinco perguntas não havia sido validado em crianças. O diagnóstico de hEDS exige os três conjuntos de critérios e a exclusão de outras causas.",
     "limitsEvidence": {
@@ -699,20 +727,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-de-beighton/calculator.js",
-    "bytes": 5802,
-    "sha256": "c1297ace38067530406acf0b2840bb7896f59880321f0a55f039e93feca5e732"
+    "bytes": 6007,
+    "sha256": "968122acb4b05e240f92b70a422ec963a18560ca536020661e93f34c7ce464d9"
   },
-  "sourceToolSha256": "f6bd7c16ef6ac4b28f01c358092f732c1f41cdfe3be6201a2b85e9aa3c67c337",
+  "sourceToolSha256": "4f3b712df0825615f180ef7a9be65287b9077047d5a50314819a4b842dbec909",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "d931457b4ee8b6585d3e1e926a77db5a62d06b3d999e8a41610196ea16a79f62",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "d931457b4ee8b6585d3e1e926a77db5a62d06b3d999e8a41610196ea16a79f62",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",
